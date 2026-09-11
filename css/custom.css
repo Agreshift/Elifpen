@@ -1,0 +1,434 @@
+/*----------------------------------------------------------------------------
+ * Elif Pen - Marka düzenlemeleri
+ * Şablon: CleaThin. Bu dosya şablonun üzerine eklenen özel stilleri içerir.
+ *--------------------------------------------------------------------------*/
+
+:root {
+    --elif-crimson: #c5124e;
+    --elif-crimson-dark: #9d0e3e;
+    --elif-blue: #1b9dd9;
+    --elif-dark: #32323a;
+}
+
+/* Logo
+ *---------------------------------------------------------------------------*/
+.navbar .brand .logo-big {
+    max-height: 62px;
+    width: auto;
+}
+
+.navbar.affix-top .brand .logo-big {
+    max-height: 72px;
+}
+
+.navbar .brand .logo-small {
+    max-height: 44px;
+    width: auto;
+}
+
+.footer .logo img {
+    max-width: 230px;
+    height: auto;
+}
+
+/* Genel
+ *---------------------------------------------------------------------------*/
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.mt {
+    margin-top: 30px;
+}
+
+.rounded-image {
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(50, 50, 58, 0.12);
+    background: #fff;
+}
+
+.section-head-action {
+    padding-top: 18px;
+}
+
+.row.vertical-align {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .row.vertical-align {
+        display: block;
+    }
+    .section-head-action {
+        padding-top: 0;
+        text-align: left !important;
+        margin-bottom: 20px;
+    }
+}
+
+/* Beyaz buton
+ *---------------------------------------------------------------------------*/
+.btn-white {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 5px 0 5px 6px;
+    border: solid 2px #fff;
+    border-radius: 3px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background: #fff;
+    color: var(--elif-crimson);
+    text-decoration: none;
+}
+
+.section-page-header .btn-white,
+.bg-light-gray .btn-white {
+    border-color: var(--elif-crimson);
+    color: var(--elif-crimson);
+}
+
+.section-page-header .btn-white:hover,
+.bg-light-gray .btn-white:hover {
+    background: var(--elif-crimson);
+    color: #fff;
+}
+
+/* Slider
+ *---------------------------------------------------------------------------*/
+.slider .item h1 {
+    font-size: 44px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.slider .item .h4 {
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 560px;
+}
+
+.hero-image {
+    max-height: 460px;
+    margin: 0 auto;
+    filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.35));
+}
+
+@media (max-width: 767px) {
+    .slider .item h1 {
+        font-size: 28px;
+    }
+    .hero-image {
+        display: none;
+    }
+}
+
+/* Ürün kartları
+ *---------------------------------------------------------------------------*/
+.project-item .gallery-image {
+    background: #f2f5f7;
+}
+
+.project-item .gallery-image img {
+    width: 100%;
+    display: block;
+}
+
+.project-item .gallery-image::after {
+    content: '\f105';
+}
+
+.project-item .info .description {
+    min-height: 44px;
+}
+
+/* Ürün detay bölümleri
+ *---------------------------------------------------------------------------*/
+.product-section {
+    padding: 60px 0;
+    scroll-margin-top: 120px;
+}
+
+.product-text .icon {
+    font-size: 44px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.product-text .title {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.product-text .lead {
+    color: #666;
+    font-size: 17px;
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 26px;
+}
+
+.check-list li {
+    padding: 7px 0;
+    border-bottom: solid 1px #eaeaea;
+    color: #555;
+}
+
+.check-list li:last-child {
+    border-bottom: 0;
+}
+
+.product-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.product-nav li {
+    display: inline-block;
+    margin: 0 4px 8px;
+}
+
+.product-nav li a {
+    display: block;
+    padding: 8px 16px;
+    border: solid 1px #e2e6ea;
+    border-radius: 30px;
+    color: #666;
+    font-size: 13px;
+    background: #fff;
+    transition: all 0.25s ease-in-out;
+}
+
+.product-nav li a:hover {
+    background: var(--elif-crimson);
+    border-color: var(--elif-crimson);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Süreç adımları
+ *---------------------------------------------------------------------------*/
+.step {
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.step-no {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    line-height: 62px;
+    border: solid 2px var(--elif-crimson);
+    border-radius: 50%;
+    color: var(--elif-crimson);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.step .title {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.step .description {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Teklif şeridi
+ *---------------------------------------------------------------------------*/
+.cta-strip h3 {
+    margin-top: 0;
+}
+
+.cta-strip .cta-actions {
+    padding-top: 12px;
+}
+
+@media (max-width: 991px) {
+    .cta-strip .cta-actions {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+}
+
+/* Yorum avatarı
+ *---------------------------------------------------------------------------*/
+.testimonial .avatar {
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: var(--elif-crimson);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Not kutusu
+ *---------------------------------------------------------------------------*/
+.alert-note {
+    margin: 30px 0 10px;
+    padding: 18px 22px;
+    background: #f7f9fa;
+    border-left: solid 4px var(--elif-blue);
+    color: #555;
+    border-radius: 3px;
+}
+
+/* Footer
+ *---------------------------------------------------------------------------*/
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.footer-contact li {
+    padding: 6px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer-contact li i {
+    color: var(--elif-crimson);
+    margin-right: 6px;
+}
+
+.footer-contact li a {
+    color: #777;
+}
+
+.footer-contact li a:hover {
+    color: var(--elif-crimson);
+}
+
+/* İletişim
+ *---------------------------------------------------------------------------*/
+.map-wrapper {
+    margin-top: 50px;
+    line-height: 0;
+    border-top: solid 4px var(--elif-crimson);
+}
+
+.consent {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.6;
+    padding-left: 22px;
+}
+
+/* WhatsApp butonu
+ *---------------------------------------------------------------------------*/
+.whatsapp-float {
+    position: fixed;
+    left: 22px;
+    bottom: 26px;
+    z-index: 999;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    font-size: 28px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform 0.25s ease-in-out;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+    color: #fff;
+    transform: scale(1.08);
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .whatsapp-float {
+        left: 16px;
+        bottom: 18px;
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 25px;
+    }
+}
+
+/* SSS
+ *---------------------------------------------------------------------------*/
+#faq .panel-heading {
+    background: #fff;
+}
+
+#faq .panel-title a {
+    display: block;
+    color: var(--elif-dark);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#faq .panel-title a:hover,
+#faq .panel-title a[aria-expanded="true"] {
+    color: var(--elif-crimson);
+    text-decoration: none;
+}
+
+#faq .panel-body {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Eşit yükseklikli kart ızgarası
+ *---------------------------------------------------------------------------*/
+.card-grid {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card-grid > [class*="col-"] {
+    display: -webkit-flex;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.card-grid .project-item {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+}
+
+.card-grid .project-item .info {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" width="1920" height="900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d2a35"/><stop offset="0.55" stop-color="#264456"/><stop offset="1" stop-color="#12222c"/>
+    </linearGradient>
+    <linearGradient id="glass1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fd0f0" stop-opacity="0.35"/><stop offset="1" stop-color="#1b9dd9" stop-opacity="0.12"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="900" fill="url(#bg1)"/>
+  <g opacity="0.9">
+    <g fill="url(#glass1)" stroke="#ffffff" stroke-opacity="0.18" stroke-width="6">
+      <rect x="1040" y="80" width="230" height="330"/><rect x="1290" y="80" width="230" height="330"/><rect x="1540" y="80" width="230" height="330"/>
+      <rect x="1040" y="430" width="230" height="330"/><rect x="1290" y="430" width="230" height="330"/><rect x="1540" y="430" width="230" height="330"/>
+    </g>
+  </g>
+  <g opacity="0.25">
+    <path d="M1040 760 L1520 300 L1650 300 L1170 760 Z" fill="#ffffff"/>
+    <path d="M1290 780 L1740 340 L1790 340 L1340 780 Z" fill="#ffffff"/>
+  </g>
+  <g opacity="0.14" fill="#1b9dd9">
+    <circle cx="230" cy="700" r="320"/>
+  </g>
+  <rect y="884" width="1920" height="16" fill="#c5124e"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 170" width="176" height="170" role="img" aria-label="Elif Pen">
+  <rect x="10" y="16" width="46" height="138" fill="#c5124e"/>
+  <circle cx="48" cy="88" r="4.5" fill="#ffffff"/>
+  <path d="M74 156 L74 40" stroke="#1b9dd9" stroke-width="11" fill="none"/>
+  <path d="M74 12 L92 46 L56 46 Z" fill="#1b9dd9"/>
+  <rect x="100" y="30" width="66" height="110" fill="#c5124e"/>
+  <rect x="129" y="30" width="8" height="110" fill="#ffffff"/>
+  <rect x="100" y="81" width="66" height="8" fill="#ffffff"/>
+</svg>

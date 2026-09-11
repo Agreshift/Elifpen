@@ -1,0 +1,31 @@
+# Elif Pen - Apache yapılandırması
+# NOT: Site bir alt klasörde yayınlanıyorsa (örn. localhost/Elifpen) ErrorDocument
+# satırını "/Elifpen/404.html" şeklinde güncelleyin.
+
+ErrorDocument 404 /404.html
+
+# Form kayıt dosyası dışarıdan okunamasın
+<FilesMatch "\.(log|md)$">
+    Require all denied
+</FilesMatch>
+
+# Karakter seti
+AddDefaultCharset UTF-8
+
+# Sıkıştırma
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+    AddOutputFilterByType DEFLATE application/javascript application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Tarayıcı önbelleği
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 7 days"
+    ExpiresByType application/javascript "access plus 7 days"
+    ExpiresByType image/svg+xml "access plus 30 days"
+    ExpiresByType image/png "access plus 30 days"
+    ExpiresByType image/jpeg "access plus 30 days"
+    ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
